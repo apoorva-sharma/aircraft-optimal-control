@@ -1,4 +1,4 @@
-function [u, xnext, optval] = mpc_step(x,x_df)
+function [u, xnext, optval] = mpc_step(x,x_df, T)
     Q = diag([1,1,0.1,0.1]);
     Qhalf = sqrtm(Q);
     
